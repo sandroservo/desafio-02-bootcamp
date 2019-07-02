@@ -18,6 +18,25 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@stencil/core@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.1.3.tgz#5b3994ddfc810867951b71c79254e7606187ed23"
+  integrity sha512-Pb8PfSvM/aK9h4G6ApYRcx315S+8+I27H5Qk/NSKx0M9/yAD1ureYhE7sMcupu/3mKMQmA7SLOa21aBTKISP4Q==
+  dependencies:
+    typescript "3.5.2"
+
+"@stencil/router@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-1.0.1.tgz#f95bcc67ef8d832c16a117487a277d4ce2973d2a"
+  integrity sha512-ZMholl1BE+glNAc/8pcEb9RYkeH0XETxsJbx6D7f3azTmaTXqKYty1IACP/3BtVjuimpfLdxQJ+J95wKmnYBtA==
+  dependencies:
+    "@stencil/state-tunnel" "^1.0.1"
+
+"@stencil/state-tunnel@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-1.0.1.tgz#21324f494ad719732505c8134099e415ac4c3c81"
+  integrity sha512-DYG8uROgL9hkjVTCtCfRBb0d3FwpiFB0muRrNZQ2X1Qo5hxMuNNji76/ILddqeq0AfgkKCW82xrMPDpy+rNIhQ==
+
 "@types/node@*":
   version "12.0.10"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.10.tgz#51babf9c7deadd5343620055fc8aff7995c8b031"
@@ -201,6 +220,11 @@ base@^0.11.1:
     isobject "^3.0.1"
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
+
+bignumber.js@7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-7.2.1.tgz#80c048759d826800807c4bfd521e50edbba57a5f"
+  integrity sha512-S4XzBk5sMB+Rcb/LNcpzXr57VRTxgAvaAEDAl1AwRx27j00hT84O6OkteE7u8UB3NuaaygCRrEpqox4uDOrbdQ==
 
 binary-extensions@^1.0.0:
   version "1.13.1"
@@ -2080,6 +2104,16 @@ mysql2@^1.6.5:
     seq-queue "^0.0.5"
     sqlstring "^2.3.1"
 
+mysql@^2.17.1:
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/mysql/-/mysql-2.17.1.tgz#62bba4a039a9b2f73638cd1652ce50fc6f682899"
+  integrity sha512-7vMqHQ673SAk5C8fOzTG2LpPcf3bNt0oL3sFpxPEEFp1mdlDcrLK0On7z8ZYKaaHrHwNcQ/MTUz7/oobZ2OyyA==
+  dependencies:
+    bignumber.js "7.2.1"
+    readable-stream "2.3.6"
+    safe-buffer "5.1.2"
+    sqlstring "2.3.1"
+
 mz@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
@@ -2642,7 +2676,7 @@ read-pkg@^2.0.0:
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
 
-readable-stream@^2.0.2, readable-stream@^2.0.6:
+readable-stream@2.3.6, readable-stream@^2.0.2, readable-stream@^2.0.6:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
   integrity sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
@@ -3038,7 +3072,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sqlstring@^2.3.1:
+sqlstring@2.3.1, sqlstring@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/sqlstring/-/sqlstring-2.3.1.tgz#475393ff9e91479aea62dcaf0ca3d14983a7fb40"
   integrity sha1-R1OT/56RR5rqYtyvDKPRSYOn+0A=
@@ -3282,6 +3316,11 @@ type@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/type/-/type-1.0.1.tgz#084c9a17fcc9151a2cdb1459905c2e45e4bb7d61"
   integrity sha512-MAM5dBMJCJNKs9E7JXo4CXRAansRfG0nlJxW7Wf6GZzSOvH31zClSaHdIMWLehe/EGMBkqeC55rrkaOr5Oo7Nw==
+
+typescript@3.5.2:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
+  integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
 
 umzug@^2.1.0:
   version "2.2.0"

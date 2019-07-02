@@ -1,11 +1,11 @@
 module.exports = {
   dialect: 'mysql',
-  host: '127.0.0.1',
+  host: 'localhost',
   username: 'root',
   password: 'docker',
   database: 'meetapp',
   define: {
-    timestamps: true,
+    timestamps: false,
     underscored: true,
     underscoredAll: true,
   },
